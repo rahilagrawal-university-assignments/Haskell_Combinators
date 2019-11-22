@@ -1,0 +1,158 @@
+
+==================== FINAL INTERFACE ====================
+2019-07-06 02:59:51.959088 UTC
+
+interface main:TortoiseCombinators 8022
+  interface hash: 865f9f5b0b0be1df42d5f633cf109c62
+  ABI hash: c3dd7aa88eb9f05429fbb7700286783e
+  export-list hash: 735a505de1f9270ae5e1398b77de11fc
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 61590a41f13c1de1f84f4cc69df78bbd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TortoiseCombinators.andThen
+  TortoiseCombinators.invisibly
+  TortoiseCombinators.loop
+  TortoiseCombinators.overlay
+  TortoiseCombinators.retrace
+module dependencies: Tortoise
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Tortoise b1059e1036400af094eb900238a21641
+  exports: 17bb42b7abb4b8f657ba026147798592
+  Colour d78a8b42b180e9e5e81fef69d389b64d
+  Instructions da54e1c72fc39648f154ea8046be7b10
+  LineStyle 9040f192270b954aaff8da1757a91712
+  Move 1c11e679b0f31ed289fcfaac5c620661
+  PenDown 2e29a2694829a6b8d9b34fbe90c567d3
+  PenUp 9a17290b52cd724e4ec156284b2aec30
+  SetColour 9c707e0dc97e363d4ce5f3b36fc5dfc4
+  SetStyle af735bdc390176ca1e9e9a0270e813c8
+  Solid 22a82b2f52cf8732b26faf84e54cfb86
+  Stop 720ff061e412743d5941dee996ca3497
+  Turn 4f995b66f8feb55668f43d914079042f
+  white 915994a821cec26787d7a05791bd5895
+10e0047a5e07c90baf0f81e96bc44186
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TortoiseCombinators.$trModule3
+                   TortoiseCombinators.$trModule1) -}
+543ff1c8d02a4a291688791b3db47d6d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TortoiseCombinators.$trModule2) -}
+97ee2c1eab334634b88ffa42e3aa3ef2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TortoiseCombinators"#) -}
+a7502960eb4d77d5d4a0864487592bbb
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS TortoiseCombinators.$trModule4) -}
+15218d043748a5385202e70c9d90136a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+6405c978be625a8b8ffa64a3f6fc037c
+  $wloop ::
+    GHC.Prim.Int# -> Tortoise.Instructions -> Tortoise.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>, Inline: [0] -}
+a8eafcb843ead665327d04180c554ef0
+  andThen ::
+    Tortoise.Instructions
+    -> Tortoise.Instructions -> Tortoise.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+ff65a42e170b028a0882472b5db423c9
+  invisibly :: Tortoise.Instructions -> Tortoise.Instructions
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (i :: Tortoise.Instructions) ->
+                 TortoiseCombinators.andThen
+                   TortoiseCombinators.invisibly2
+                   (TortoiseCombinators.invisiblyHelper
+                      i
+                      TortoiseCombinators.invisibly1)) -}
+886581f36ee6172279d01003e94aad9a
+  invisibly1 :: Tortoise.Instructions
+  {- HasNoCafRefs, Strictness: m5,
+     Unfolding: (Tortoise.PenDown Tortoise.Stop) -}
+535159b7f55fec1699fa4642ba896e5b
+  invisibly2 :: Tortoise.Instructions
+  {- HasNoCafRefs, Strictness: m6,
+     Unfolding: (Tortoise.PenUp Tortoise.Stop) -}
+ea5e2e6ffd1737f5ce8c09e88c7257b9
+  invisiblyHelper ::
+    Tortoise.Instructions
+    -> Tortoise.Instructions -> Tortoise.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+ac55332e876cf19c202a5e4627a706d6
+  loop ::
+    GHC.Types.Int -> Tortoise.Instructions -> Tortoise.Instructions
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><L,U>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: Tortoise.Instructions) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 TortoiseCombinators.$wloop ww1 w1 }) -}
+2602ab34a4332ce4e0f03fbdbc926ec1
+  overlay :: [Tortoise.Instructions] -> Tortoise.Instructions
+  {- Arity: 1, Strictness: <S,1*U> -}
+f7497ba520ea4debee821545e575df8d
+  retrace :: Tortoise.Instructions -> Tortoise.Instructions
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (i :: Tortoise.Instructions) ->
+                 TortoiseCombinators.retraceHelper
+                   i
+                   Tortoise.white
+                   TortoiseCombinators.retrace3
+                   GHC.Types.True
+                   TortoiseCombinators.retrace1) -}
+912a6bb14d77444117faeac55a808221
+  retrace1 :: Tortoise.Instructions
+  {- HasNoCafRefs, Strictness: m4,
+     Unfolding: (Tortoise.SetColour
+                   Tortoise.white
+                   TortoiseCombinators.retrace2) -}
+be84430bb893fed7836967cc6be24768
+  retrace2 :: Tortoise.Instructions
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Tortoise.SetStyle
+                   TortoiseCombinators.retrace3
+                   TortoiseCombinators.invisibly1) -}
+31a72217eaa4c5dfff10c46658ac7d16
+  retrace3 :: Tortoise.LineStyle
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Tortoise.Solid TortoiseCombinators.retrace4) -}
+1777528433e3ffe69e6a78dcc938bde7
+  retrace4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+cef8f3416d6787a8876a67cbd8ed9689
+  retraceHelper ::
+    Tortoise.Instructions
+    -> Tortoise.Colour
+    -> Tortoise.LineStyle
+    -> GHC.Types.Bool
+    -> Tortoise.Instructions
+    -> Tortoise.Instructions
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,U><L,1*U><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
